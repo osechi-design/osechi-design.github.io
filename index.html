@@ -1,46 +1,151 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Yuki Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 40px 20px;
-      max-width: 800px;
-      line-height: 1.7;
-      margin-inline: auto;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 4px;
-    }
-    h2 {
-      margin-top: 32px;
-      font-size: 20px;
-    }
-    .tagline {
-      color: #666;
-      margin-bottom: 24px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSECHI DESIGN</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Yuji+Syuku&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="image/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- まずjQueryを読み込む   -->
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- ripples ↓ -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+
+
+
 </head>
+
 <body>
-  <h1>ゆうき / Web Designer</h1>
-  <p class="tagline">元介護職 ▶ Webデザイン・ディレクションを目指して勉強中</p>
+  <!-- ここからheader↓ -->
+  <header class="ripple">
+    <div class="navigation">
+      <h1><a href="index.html">OSECHI<br>DESIGN</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="works.html">Works</a></li>
+        </ul>
+      </nav>
+    </div>
 
-  <h2>About</h2>
-  <p>このサイトはGitHub Pagesで公開しているポートフォリオのテスト版です。</p>
+    <div>
+      <p class="fadein-text">
+        <span>OSECHI</span>
+        <span>DESIGN</span>
+        <span>PORTFOLIO</span>
+      </p>
 
-  <h2>Works</h2>
-  <ul>
-    <li>制作中：LPデザイン / バナー / アイキャッチなど</li>
-    <li>今後：WordPressサイト、DTP案件の事例も追加予定</li>
-  </ul>
+    </div>
 
-  <h2>Contact</h2>
-  <p>Instagramやメールフォームへのリンクを、あとでここに設置します。</p>
+    <div class="scroll">
+      <span class="type-on-scroll" data-speed="100" data-delay="300">Scroll</span>
+      <div class="scroll-down"></div>
+    </div>
+
+  </header>
+  <!-- ここまでheader↑ -->
+
+  <!-- ここからmain↓ -->
+  <main>
+
+    <div class="profile">
+      <h2 class="type-on-scroll" data-speed="100" data-delay="500"><span>PROFILE</span></h2>
+
+      <section class="name-wrap">
+        <img class="profile-img" src="image/AdobeStock_469625213.jpeg" alt="プロフィール画像">
+        <div>
+          <div class="name-set">
+            <div class="name">
+              <p class="type-on-scroll" data-speed="100" data-delay="1000">関 優希</p>
+            </div>
+            <div class="name-en">
+              <p class="type-on-scroll" data-speed="100" data-delay="1000">SEKI YUKI</p>
+            </div>
+          </div>
+          <div class="profile-text">
+            <p class="type-on-scroll" data-speed="28" data-delay="500">はじめまして!<br>WASパソコンマルチメディアスクール、47期生の関と言います!<br>学生時代は10年間陸上競技に打ち込み、介護の仕事を10年続けた後に、Webデザインの仕事に強い魅力を感じ、Webデザイナーを目指すことを決意しました。訓練校での4ヶ月間のカリキュラムを終え、残りの2か月間は企業実習に取り組みます!</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="more"><a href="profile.html">more</a></div>
+
+<div class="works">
+  <h2 class="type-on-scroll" data-speed="100" data-delay="500">WORKS</h2>
+  <section>
+    <div class="works-wrap">
+      <div class="sliderArea">
+
+        <div class="thumb">
+          <div><div class="thumb-box"><img src="image/web-site.jpg" alt="Webサイト"></div></div>
+          <div><div class="thumb-box"><img src="image/wasou.jpg" alt="和装サイト"></div></div>
+          <div><div class="thumb-box"><img src="image/nasuko-design.jpg" alt="デザイン"></div></div>
+          <div><div class="thumb-box"><img src="image/POP-brush.jpg" alt="POPブラシ"></div></div>
+          <div><div class="thumb-box"><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div></div>
+          <div><div class="thumb-box"><img src="image/illust.jpg" alt="イラスト"></div></div>
+        </div>
+
+        <div class="slider_thumb slider">
+          <div><img src="image/web-site.jpg" alt="Webサイト"></div>
+          <div><img src="image/wasou.jpg" alt="和装サイト"></div>
+          <div><img src="image/nasuko-design.jpg" alt="デザイン"></div>
+          <div><img src="image/POP-brush.jpg" alt="POPブラシ"></div>
+          <div><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div>
+          <div><img src="image/illust.jpg" alt="イラスト"></div>
+        </div>
+
+      </div><!-- /.sliderArea -->
+    </div><!-- /.works-wrap -->
+
+    <div class="more"><a href="works.html">more</a></div>
+  </section>
+</div><!-- /.works -->
+
+
+    <div class="contact">
+      <h2 class="type-on-scroll" data-speed="100">CONTACT</h2>
+      <section class="contact-wrap">
+        <div class="instagram-qr">
+          <a href="https://www.instagram.com/osechi_illust/" target="_blank" rel="noopener noreferrer"><img src="image/osechi_illust_qr.png" alt="Instagramアカウント"></a>
+        </div>
+      </section>
+    </div>
+
+
+    <section>
+      <div class="top"><a href="index.html">
+          TOP
+        </a></div>
+    </section>
+
+  </main>
+  <!-- ここまでmain↑ -->
+
+  <!-- ここからfooter↓ -->
+  <footer>
+  <p>&copy; 2025 OSECHI DESIGN. All Rights Reserved.</p>
+</footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/type-on-scroll.js" defer></script>
+
 </body>
+
 </html>
