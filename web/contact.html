@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>わずくらしリフォーム お問い合わせ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Yuji+Syuku&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/fabicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+    <header id="top">
+        <p>水まわり・内装・外壁まで、住宅リフォームのことなら何でもご相談ください</p>
+
+        <div class="navigation">
+            <h1>
+                <a href="index.html"><img src="images/logo_company.svg" alt="株式会社わずくらしリフォーム"></a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="service.html">サービス紹介</a></li>
+                    <li><a href="works.html">施工事例</a></li>
+                    <li><a href="company.html">会社紹介</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li class="contact-btn"><a href="contact.html">無料相談を申し込む</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="top-view">
+            <div class="top-view-image">
+                <img class="top-img" src="images/contact-top.jpg" alt="テーブルの上に家の模型が３つ横並びになっている写真 ">
+                <p class="top-view-text">お問い合わせ</p>
+            </div>
+        </section>
+
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li>お問い合わせ</li>
+            </ul>
+        </div>
+
+        <p class="top-text anim-box fadeup"><span>住まいに関するちょっとしたお困りごとから、<br>
+                リフォームのご相談、各種お見積りやご質問まで、<br>
+                どうぞお気軽にお問い合わせください。</span></p>
+
+        <section>
+            <h2 class="h2-contact"><span>CONTACT</span>お問い合わせ</h2>
+
+            <form class="form" action="">
+                <div class="form-item">
+                    <p>お名前（必須）<input type="text" name="user-name"></p>
+                    <p>メールアドレス（必須）<input type="text" name="user-mail"></p>
+                    <p>お電話番号<input type="text"></p>
+                    <p>ご住所<input type="text" name="user-address"></p>
+
+                    <div class="form-checkbox">
+                        <p class="checkbox-text">お問い合わせの種類</p>
+                        <div class="checkbox-item">
+                            <label><input type="checkbox" name="service-select" value="キッチンのリフォーム">キッチンのリフォーム</label>
+                            <label><input type="checkbox" name="service-select" value="内装のリフォーム">内装のリフォーム</label>
+                            <label><input type="checkbox" name="service-select"
+                                    value="浴室またはトイレのリフォーム">浴室またはトイレのリフォーム</label>
+                            <label><input type="checkbox" name="service-select" value="外構のリフォーム">外構のリフォーム</label>
+                            <label><input type="checkbox" name="service-select" value="その他">その他</label>
+                        </div>
+                    </div>
+                </div>
+
+                <p>お問い合わせ内容<textarea name="message"></textarea></p>
+                <p class="form-warning">
+                    ※お問い合わせ内容によっては、回答までに数日いただく場合がございます。あらかじめご了承ください。
+                </p>
+                <p class="submit-button">
+                    <input type="submit" value="送信">
+                </p>
+            </form>
+            </div>
+        </section>
+        <div class="back-top"><a href="contact.html"><p>↑ページ上部へもどる</p></a></p></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo_v02.svg" alt="会社ロゴ"></a>
+            </div>
+            <div class="footer-info">
+                <p>会社名：ワズくらしリフォーム</p>
+                <p>所在地：〒012-3456 愛知県名古屋市天白区植田本町00-00</p>
+                <p>電話番号：000-000-0000</p>
+                <p>営業時間：9:00-18:00</p>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="service.html">サービス紹介</a></li>
+                    <li><a href="works.html">施工事例</a></li>
+                    <li><a href="company.html">会社紹介</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>このサイトは架空のサイトになります。このページで使用している写真は全てサンプルです。</p>
+        </div>
+    </footer>
+<script>
+        // 交差し始め（20%見えたら）発火。1回見えたら解除して再生はしない。
+        const io = new IntersectionObserver((entries, observer) => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    // クラスを付与し、CSSアニメーションをトリガー
+                    entry.target.classList.add('is-animated');
+                    // 一度アニメーションしたら監視を終了
+                    observer.unobserve(entry.target);
+                }
+            }
+        }, {
+            root: null,     // ビューポート
+            threshold: 0.5,   // 要素が50%見えたら発火
+            rootMargin: '0px 0px -10% 0px' // 少し早めに発火させる調整
+        });
+
+        // まとめて監視開始
+        document.querySelectorAll('.anim-box.fadeup').forEach(el => io.observe(el));
+        document.querySelectorAll('.js-slide-in').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
+</body>
+
+</html>
