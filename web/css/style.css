@@ -1388,7 +1388,7 @@ dd span {
 @media (max-width: 768px) {
   /* COMPANY 見出し */
   .h2-company {
-    margin: 80px 16px 24px;
+    margin: 140px 16px 20px;
     font-size: 24px;
   }
 
