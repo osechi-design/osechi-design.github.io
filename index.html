@@ -67,8 +67,11 @@
       <h2 class="type-on-scroll" data-speed="100" data-delay="500"><span>PROFILE</span></h2>
 
       <section class="name-wrap">
-        <img class="profile-img" src="image/AdobeStock_469625213.jpeg" alt="プロフィール画像">
-        <div>
+        <!-- 左：画像（フェードイン） -->
+        <img class="profile-img fade-on-scroll" src="image/profile_resize.jpg" alt="プロフィール写真" data-delay="400">
+
+        <!-- 右：名前＋テキストをひとかたまりにする -->
+        <div class="profile-body">
           <div class="name-set">
             <div class="name">
               <p class="type-on-scroll" data-speed="100" data-delay="1000">関 優希</p>
@@ -77,53 +80,68 @@
               <p class="type-on-scroll" data-speed="100" data-delay="1000">SEKI YUKI</p>
             </div>
           </div>
+
           <div class="profile-text">
-            <p class="type-on-scroll" data-speed="28" data-delay="500">はじめまして!<br>WASパソコンマルチメディアスクール、47期生の関と言います!<br>学生時代は10年間陸上競技に打ち込み、介護の仕事を10年続けた後に、Webデザインの仕事に強い魅力を感じ、Webデザイナーを目指すことを決意しました。訓練校での4ヶ月間のカリキュラムを終え、残りの2か月間は企業実習に取り組みます!</p>
+            <p class="type-on-scroll" data-speed="28" data-delay="500">はじめまして。名古屋を拠点に活動しているデザイナー、関 優希（せき ゆうき）です。<br>介護業界で10年間、利用者さんやご家族と向き合ってきた経験を活かし、「誰にでも伝わること」と「やさしく使いやすいデザイン」を心がけて、Web・グラフィック・イラスト制作を行っています。</p>
+            </p>
           </div>
         </div>
-
       </section>
     </div>
 
+
     <div class="more"><a href="profile.html">more</a></div>
 
-<div class="works">
-  <h2 class="type-on-scroll" data-speed="100" data-delay="500">WORKS</h2>
-  <section>
-    <div class="works-wrap">
-      <div class="sliderArea">
+    <div class="works">
+      <h2 class="type-on-scroll" data-speed="100" data-delay="500">WORKS</h2>
+      <section>
+        <div class="works-wrap">
+          <div class="sliderArea">
 
-        <div class="thumb">
-          <div><div class="thumb-box"><img src="image/web-site.jpg" alt="Webサイト"></div></div>
-          <div><div class="thumb-box"><img src="image/wasou.jpg" alt="和装サイト"></div></div>
-          <div><div class="thumb-box"><img src="image/nasuko-design.jpg" alt="デザイン"></div></div>
-          <div><div class="thumb-box"><img src="image/POP-brush.jpg" alt="POPブラシ"></div></div>
-          <div><div class="thumb-box"><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div></div>
-          <div><div class="thumb-box"><img src="image/illust.jpg" alt="イラスト"></div></div>
-        </div>
+            <div class="thumb">
+              <div>
+                <div class="thumb-box"><img src="image/web-site.jpg" alt="Webサイト"></div>
+              </div>
+              <div>
+                <div class="thumb-box"><img src="image/wasou.jpg" alt="和装サイト"></div>
+              </div>
+              <div>
+                <div class="thumb-box"><img src="image/nasuko-design.jpg" alt="デザイン"></div>
+              </div>
+              <div>
+                <div class="thumb-box"><img src="image/POP-brush.jpg" alt="POPブラシ"></div>
+              </div>
+              <div>
+                <div class="thumb-box"><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div>
+              </div>
+              <div>
+                <div class="thumb-box"><img src="image/illust.jpg" alt="イラスト"></div>
+              </div>
+            </div>
 
-        <div class="slider_thumb slider">
-          <div><img src="image/web-site.jpg" alt="Webサイト"></div>
-          <div><img src="image/wasou.jpg" alt="和装サイト"></div>
-          <div><img src="image/nasuko-design.jpg" alt="デザイン"></div>
-          <div><img src="image/POP-brush.jpg" alt="POPブラシ"></div>
-          <div><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div>
-          <div><img src="image/illust.jpg" alt="イラスト"></div>
-        </div>
+            <div class="slider_thumb slider">
+              <div><img src="image/web-site.jpg" alt="Webサイト"></div>
+              <div><img src="image/wasou.jpg" alt="和装サイト"></div>
+              <div><img src="image/nasuko-design.jpg" alt="デザイン"></div>
+              <div><img src="image/POP-brush.jpg" alt="POPブラシ"></div>
+              <div><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div>
+              <div><img src="image/illust.jpg" alt="イラスト"></div>
+            </div>
 
-      </div><!-- /.sliderArea -->
-    </div><!-- /.works-wrap -->
+          </div><!-- /.sliderArea -->
+        </div><!-- /.works-wrap -->
 
-    <div class="more"><a href="works.html">more</a></div>
-  </section>
-</div><!-- /.works -->
+        <div class="more"><a href="works.html">more</a></div>
+      </section>
+    </div><!-- /.works -->
 
 
     <div class="contact">
       <h2 class="type-on-scroll" data-speed="100">CONTACT</h2>
       <section class="contact-wrap">
         <div class="instagram-qr">
-          <a href="https://www.instagram.com/osechi_illust/" target="_blank" rel="noopener noreferrer"><img src="image/osechi_illust_qr.png" alt="Instagramアカウント"></a>
+          <a href="https://www.instagram.com/osechi_illust/" target="_blank" rel="noopener noreferrer"><img
+              src="image/osechi_illust_qr.png" alt="Instagramアカウント"></a>
         </div>
       </section>
     </div>
@@ -140,8 +158,8 @@
 
   <!-- ここからfooter↓ -->
   <footer>
-  <p>&copy; 2025 OSECHI DESIGN. All Rights Reserved.</p>
-</footer>
+    <p>&copy; 2025 OSECHI DESIGN. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/main.js"></script>
   <script src="js/type-on-scroll.js" defer></script>
