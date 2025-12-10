@@ -34,7 +34,7 @@ html {
 }
 
 .ripple {
-  background-image: url(../image/AdobeStock_537529353.jpeg);
+  background-image: url(../image/AdobeStock_537529353.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,10 +171,6 @@ html {
   }
 }
 
-
-
-
-
 /* ここからmain↓ */
 main {
   margin-inline: 5%;
@@ -202,6 +198,19 @@ h2 {
   /* border-bottom: solid 1px #333; */
 }
 
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.fade-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .profile {
   margin: 0 auto 0;
   padding-top: 100px;
@@ -214,14 +223,7 @@ h2 {
   margin: 16px 32px 0;
 }
 
-/* 左のテキスト側（.name-wrap 直下の div）を“常に”残り幅にする */
-.name-wrap>div {
-  flex: 1 1 0;
-  /* ← これで左側が常に可変カラム */
-  min-width: 0;
-  /* テキストの折返しを許可してはみ出し防止 */
-}
-
+/* 左：画像は固定幅 */
 .profile-img {
   flex: 0 0 300px;
   width: 300px;
@@ -229,16 +231,18 @@ h2 {
   object-fit: cover;
   margin-left: auto;
   display: block;
-  /* ← 右端へ押しやる（常に右固定） */
 }
 
-
+/* 右：名前＋テキスト全体を可変にする */
+.profile-body {
+  flex: 1 1 0;
+  min-width: 0;
+}
 
 .name {
   font-size: 32px;
   text-align: left;
   display: inline-block;
-  /* 背景と影を扱いやすくする */
 }
 
 .name-en {
@@ -246,14 +250,12 @@ h2 {
   color: #333;
   margin: 24px 16px 0;
   display: inline-block;
-  /* 背景と影を扱いやすくする */
 }
 
 .profile-text {
   line-height: 1.7rem;
   margin-top: 20px;
   display: inline-block;
-  /* 背景と影を扱いやすくする */
   background: #fff;
   padding: 8px 16px;
   border-radius: 10px;
@@ -277,6 +279,10 @@ h2 {
 
   .name-set {
     text-align: center;
+  }
+
+    .profile-body {
+    width: 100%;
   }
 
   .profile-text {
@@ -668,23 +674,12 @@ footer p {
   padding: 24px 0 32px;
   color: #666;
 }
-
 /* ここまでfooter↑ */
-
 /* ここまでindex.html↑ */
 
-
-
-
-
-
-
-
-
 /* ここからProfile↓ */
-
 .ripple-profile {
-  background-image: url(../image/AdobeStock_355732812.jpeg);
+  background-image: url(../image/AdobeStock_355732812.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -712,8 +707,6 @@ footer p {
   margin-top: 40px;
   /* 好きな値に調整 */
 }
-
-/* ===== Profile専用：dt / dd レイアウト ===== */
 
 /* Profile の中だけは dl を「普通の縦積み」にする */
 .profile dl {
@@ -801,7 +794,7 @@ footer p {
 
 /* ここからworks.html↓ */
 .ripple-works {
-  background-image: url(../image/AdobeStock_538980207.jpeg);
+  background-image: url(../image/AdobeStock_538980207.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
