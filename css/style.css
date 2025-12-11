@@ -254,7 +254,7 @@ h2 {
 
 .profile-text {
   line-height: 1.7rem;
-  margin-top: 20px;
+  margin: 20px auto 30px;
   display: inline-block;
   background: #fff;
   padding: 8px 16px;
