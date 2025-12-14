@@ -9,12 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Yuji+Syuku&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Yuji+Syuku&display=swap" rel="stylesheet">
   <link rel="icon" href="image/favicon.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
-
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- まずjQueryを読み込む   -->
 
@@ -24,12 +21,9 @@
 
   <!-- ripples ↓ -->
   <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
-
-
-
 </head>
 
-<body>
+<body id="top">
   <!-- ここからheader↓ -->
   <header class="ripple">
     <div class="navigation">
@@ -49,28 +43,22 @@
         <span>DESIGN</span>
         <span>PORTFOLIO</span>
       </p>
-
     </div>
 
     <div class="scroll">
       <span class="type-on-scroll" data-speed="100" data-delay="300">Scroll</span>
       <div class="scroll-down"></div>
     </div>
-
   </header>
   <!-- ここまでheader↑ -->
 
   <!-- ここからmain↓ -->
   <main>
-
     <div class="profile">
       <h2 class="type-on-scroll" data-speed="100" data-delay="500"><span>PROFILE</span></h2>
 
       <section class="name-wrap">
-        <!-- 左：画像（フェードイン） -->
         <img class="profile-img fade-on-scroll" src="image/profile_resize.jpg" alt="プロフィール写真" data-delay="400">
-
-        <!-- 右：名前＋テキストをひとかたまりにする -->
         <div class="profile-body">
           <div class="name-set">
             <div class="name">
@@ -83,21 +71,17 @@
 
           <div class="profile-text">
             <p class="type-on-scroll" data-speed="28" data-delay="500">はじめまして。名古屋を拠点に活動しているデザイナー、関 優希（せき ゆうき）です。<br>介護業界で10年間、利用者さんやご家族と向き合ってきた経験を活かし、「誰にでも伝わること」と「やさしく使いやすいデザイン」を心がけて、Web・グラフィック・イラスト制作を行っています。</p>
-            </p>
           </div>
         </div>
       </section>
     </div>
 
-
     <div class="more"><a href="profile.html">more</a></div>
-
     <div class="works">
       <h2 class="type-on-scroll" data-speed="100" data-delay="500">WORKS</h2>
       <section>
         <div class="works-wrap">
           <div class="sliderArea">
-
             <div class="thumb">
               <div>
                 <div class="thumb-box"><img src="image/web-site.jpg" alt="Webサイト"></div>
@@ -118,7 +102,6 @@
                 <div class="thumb-box"><img src="image/illust.jpg" alt="イラスト"></div>
               </div>
             </div>
-
             <div class="slider_thumb slider">
               <div><img src="image/web-site.jpg" alt="Webサイト"></div>
               <div><img src="image/wasou.jpg" alt="和装サイト"></div>
@@ -127,30 +110,23 @@
               <div><img src="image/sticker-peekaboo.jpg" alt="ステッカー"></div>
               <div><img src="image/illust.jpg" alt="イラスト"></div>
             </div>
-
-          </div><!-- /.sliderArea -->
-        </div><!-- /.works-wrap -->
-
+          </div>
+        </div>
         <div class="more"><a href="works.html">more</a></div>
       </section>
-    </div><!-- /.works -->
-
+    </div>
 
     <div class="contact">
       <h2 class="type-on-scroll" data-speed="100">CONTACT</h2>
       <section class="contact-wrap">
         <div class="instagram-qr">
-          <a href="https://www.instagram.com/osechi_design/" target="_blank" rel="noopener noreferrer"><img
-              src="image/osechi_design_qr_black.png" alt="Instagramアカウント"></a>
+          <a href="https://www.instagram.com/osechi_design/" target="_blank" rel="noopener noreferrer"><img src="image/osechi_design_qr_black.png" alt="Instagramアカウント"></a>
         </div>
       </section>
     </div>
 
-
     <section>
-      <div class="top"><a href="index.html">
-          TOP
-        </a></div>
+      <div class="top"><a href="#top">TOP</a></div>
     </section>
 
   </main>
@@ -160,6 +136,7 @@
   <footer>
     <p>&copy; 2025 OSECHI DESIGN. All Rights Reserved.</p>
   </footer>
+  <!-- ここまでfooter↑ -->
 
   <script src="js/main.js"></script>
   <script src="js/type-on-scroll.js" defer></script>
