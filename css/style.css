@@ -176,7 +176,7 @@ main {
   margin-inline: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   main {
     margin-inline: 8%;
   }
@@ -254,7 +254,7 @@ h2 {
 
 .profile-text {
   line-height: 1.7rem;
-  margin-top: 20px auto 30px;
+  margin: 8px auto 0;
   display: inline-block;
   background: #fff;
   padding: 8px 16px;
@@ -526,15 +526,6 @@ body {
   display: block;
 }
 
-/* PCだけ特別扱いしたいなら、必要ならここに追加してOK
-@media (min-width: 1024px) {
-  .slider_thumb .slick-slide img {
-    max-height: 80vh;
-  }
-}
-*/
-
-
 /* =========================================================
    THUMB（下の小さいサムネ）
 ========================================================= */
@@ -562,17 +553,6 @@ body {
 .thumb .slick-slide {
   margin: 0 8px;
 }
-
-/* サムネの「選択されてない時は薄く」などが必要ならここに追記
-.thumb .slick-slide {
-  transition: opacity .3s ease-in-out, transform .2s ease;
-  opacity: .35;
-}
-.thumb .slick-current,
-.thumb .slick-active {
-  opacity: 1;
-}
-*/
 
 /* =========================================================
    レスポンシブ調整
@@ -770,31 +750,17 @@ footer p {
   }
 }
 
-/* プロフィールの本文内リンクは、長いURLでもちゃんと折り返す */
 .profile-text a {
   overflow-wrap: anywhere;
   word-break: break-all;
 }
 
-/* Profile 内では、type-on-scroll を“普通のブロック要素”扱いにする */
 .profile dl .type-on-scroll {
   display: block;
   overflow: visible;
   white-space: normal;
 }
-
 /* ここまでProfile.html↑ */
-
-
-
-
-
-
-
-
-
-
-
 
 /* ここからworks.html↓ */
 .ripple-works {
@@ -890,6 +856,30 @@ footer p {
 .navigation-works nav ul.slidein-left.is-in>li:nth-child(6) {
   transition-delay: calc(var(--stagger) * 5);
 }
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(7) {
+  transition-delay: calc(var(--stagger) * 0);
+}
+
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(8) {
+  transition-delay: calc(var(--stagger) * 1);
+}
+
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(9) {
+  transition-delay: calc(var(--stagger) * 2);
+}
+
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(10) {
+  transition-delay: calc(var(--stagger) * 3);
+}
+
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(11) {
+  transition-delay: calc(var(--stagger) * 4);
+}
+
+.navigation-works nav ul.slidein-left.is-in>li:nth-child(12) {
+  transition-delay: calc(var(--stagger) * 5);
+}
+
 
 
 /* Worksナビのボタン化＆TOPと同じ“ふわっ”影 */
@@ -930,125 +920,44 @@ footer p {
   outline: none;
 }
 
-/* キーボード操作の輪郭は独自に */
 .navigation-works nav ul li a:focus-visible {
   box-shadow:
     inset -3px -3px 6px #ffffff,
     0 0 0 2px rgba(0, 0, 0, .15);
 }
 
-
-
-
-.works01-img,
-.works02-img,
-.works03-img,
-.works04-img,
-.works05-img,
-.works06-img,
-.works07-img,
-.works08-img,
-.works09-img,
-.works10-img,
-.works11-img,
-.works12-img {
-  max-width: 600px;
+.work-img {
   width: 100%;
+  max-width: 600px;
   height: auto;
   align-self: flex-start;
-  /* ← 親のstretch影響を受けない保険 */
   display: block;
-  /* 余白対策 */
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.12),
-    -6px -6px 12px rgba(255, 255, 255, 0.9);
-
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.12),-6px -6px 12px rgba(255, 255, 255, 0.9);
 }
 
-.works01,
-.works02,
-.works03,
-.works04,
-.works05,
-.works06, 
-.works07,
-.works08,
-.works09,
-.works10,
-.works11,
-.works12 {
+.work {
   display: flex;
   align-items: flex-start;
   gap: 30px;
   margin-top: 10px;
 }
 
-/* PCサイズでの左右レイアウト調整 */
-@media (min-width: 769px) {
-  /* 右：画像 / 左：テキスト にしたいブロックだけ row-reverse にする */
-
-  .works01 {
-    flex-direction: row-reverse;
-  }
-
-  .works03 {
-    flex-direction: row-reverse;
-  }
-
-  .works05 {
-    flex-direction: row-reverse;
-  }
+@media (min-width:769px){
+  .work.is-reverse{ flex-direction:row-reverse; }
 }
 
 @media (max-width: 768px) {
-.works01,
-.works02,
-.works03,
-.works04,
-.works05,
-.works06,
-.works07,
-.works08,
-.works09,
-.works10,
-.works11,
-.works12 {
+.work {
     flex-direction: column;
   }
 }
 
-
-.works01>div,
-.works02>div,
-.works03>div,
-.works04>div,
-.works05>div,
-.works06>div,
-.works07>div,
-.works08>div,
-.works09>div,
-.works10>div,
-.works11>div,
-.works12>div {
+.work>div,
+.is-reverse>div {
+  text-align: left;
   line-height: 1.7;
   padding-top: 20px;
 }
-
-.works01>dt,
-.works02>div,
-.works03>div,
-.works04>div,
-.works05>div,
-.works06>div
-.works07>div,
-.works08>div,
-.works09>div,
-.works10>div,
-.works11>div,
-.works12>div {
-  text-align: left;
-}
-
-
 
 .works00 {
   margin-top: 160px;
@@ -1062,28 +971,23 @@ h2.works00 {
   font-weight: bold;
 }
 
-/* 左の番号（グラデーションのやつ） */
 h2.works00 .works-gradation {
   font-size: 70px;
   line-height: 1;
   flex-shrink: 0;
-  /* つぶれないよう固定 */
 }
 
-/* 右側の「タイトル＋サブタイトル」を縦並びにするコンテナ */
 h2.works00 .works-heading {
   display: flex;
   flex-direction: column;
 }
 
-/* メインタイトル */
 h2.works00 .works-title {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-/* サブタイトルはその下に */
 h2.works00 .title-sub {
   font-size: 20px;
   color: #000;
@@ -1103,28 +1007,23 @@ dt .works-gradation{
     font-weight: bold;
   }
 
-  /* 左の番号（グラデーションのやつ） */
   h2.works00 .works-gradation {
     font-size: 70px;
     line-height: 1;
     flex-shrink: 0;
-    /* つぶれないよう固定 */
   }
 
-  /* 右側の「タイトル＋サブタイトル」を縦並びにするコンテナ */
   h2.works00 .works-heading {
     display: flex;
     flex-direction: column;
   }
 
-  /* メインタイトル */
   h2.works00 .works-title {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
   }
 
-  /* サブタイトルはその下に */
   h2.works00 .title-sub {
     font-size: 16px;
     color: #000;
@@ -1169,8 +1068,6 @@ dd {
   }
 }
 
-
-/* Works内のリンクは常時グラデーション文字にする */
 .works-link a {
   display: inline-block;
   text-decoration: none;
@@ -1188,18 +1085,15 @@ dd {
   transition: text-shadow .35s ease, transform .35s ease, opacity .35s ease;
 }
 
-/* PC だけ、ホバーで「じんわり光る＋ちょっとだけ浮く」 */
 @media (hover: hover) {
   .works-link a:hover {
     opacity: 1;
     text-shadow:
       0 0 6px rgba(255, 255, 255, 0.7),
       0 0 8px rgba(255, 148, 200, 0.6);
-    /* transform: translateY(-1px); */
   }
 }
 
-/* ギャラリー全体を中央寄せ */
 .work-gallery {
   width: 100%;
   max-width: 600px;
@@ -1207,7 +1101,6 @@ dd {
   text-align: center;
 }
 
-/* メイン画像（600px固定） */
 .gallery-main {
   width: 100%;
   max-width: 600px;
@@ -1220,14 +1113,11 @@ dd {
 
 .gallery-main>img {
   width: 100%;
-  /* 親（600px）にフィット */
   height: auto;
-  /* 縦は自動 */
   object-fit: contain;
   display: block;
 }
 
-/* サムネ列を中央で一直線に */
 .gallery-thumbs {
   display: flex;
   justify-content: center;
@@ -1235,8 +1125,6 @@ dd {
   flex-wrap: wrap;
 }
 
-
-/* サムネボタン */
 .gallery-thumbs .thumb {
   padding: 0;
   border: 0;
@@ -1247,7 +1135,6 @@ dd {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1);
   transition: box-shadow .2s ease, transform .08s ease;
   width: 88px;
-  /* ← サムネサイズ（お好みで 64〜104px） */
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
@@ -1259,47 +1146,35 @@ dd {
   display: block;
 }
 
-/* ホバー/フォーカス */
 .gallery-thumbs .thumb:hover,
 .gallery-thumbs .thumb:focus-visible {
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .25);
 }
 
-/* 選択中 */
 .gallery-thumbs .thumb.is-active {
   box-shadow:
     inset 0 0 0 2px #bbb,
     0 0 10px rgba(0, 0, 0, .06);
 }
 
-/* Works画像の共通ルール（01～06すべて） */
 .work-img {
   width: 100%;
-  /* 親幅に追従して縮む */
   max-width: 600px;
-  /* PC時の最大サイズ */
   height: auto;
   display: block;
   margin-bottom: 24px;
-  /* 下に余白（任意） */
   object-fit: contain;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.12),
     -6px -6px 12px rgba(255, 255, 255, 0.9);
 }
 
-/* スマホ調整：余白少なめ */
 @media (max-width: 768px) {
   .work-img {
     max-width: 100%;
-    /* 画面幅いっぱい */
     margin-bottom: 16px;
   }
 }
 
-
-
-
-/* 見出し：左からスライド＋フェード */
 .slidein-left {
   opacity: 0;
   transform: translateX(-16px);
@@ -1311,10 +1186,8 @@ dd {
   transform: none;
 }
 
-/* テキスト：1行ずつフェードアップ */
 .fadeup-lines .line {
   display: block;
-  /* 1行ずつ縦積み */
   opacity: 0;
   transform: translateY(10px);
   transition: transform .45s ease, opacity .45s ease;
@@ -1325,7 +1198,6 @@ dd {
   transform: none;
 }
 
-/* モーション配慮 */
 @media (prefers-reduced-motion: reduce) {
 
   .slidein-left,
@@ -1338,89 +1210,28 @@ dd {
 
 @media (max-width: 1200px) {
 
-  /* 画像＋テキストの2カラムを縦並びにする */
-  .works01,
-  .works02,
-  .works03,
-  .works04,
-  .works05,
-  .works06,
-  .works07,
-  .works08,
-  .works09,
-  .works10,
-  .works11,
-  .works12 {
+  .work {
     flex-direction: column;
     align-items: center;
-    /* 画像とテキストを中央寄せ */
     gap: 24px;
-    /* スマホでは余白少しタイトに */
   }
 
-  .works01 dl,
-  .works02 dl,
-  .works03 dl,
-  .works04 dl,
-  .works05 dl,
-  .works06 dl,
-  .works07 dl,
-  .works08 dl,
-  .works09 dl,
-  .works10 dl,
-  .works11 dl,
-  .works12 dl {
+  .work dl {
     grid-template-columns: 1fr;
     gap: 8px 0;
-    /* 上下だけの余白にする */
   }
 
-  .works01 dt,
-  .works02 dt,
-  .works03 dt,
-  .works04 dt,
-  .works05 dt,
-  .works06 dt
-  .works07 dt,
-  .works08 dt,
-  .works09 dt,
-  .works10 dt,
-  .works11 dt,
-  .works12 dt {
+  .work dt {
     text-align: left;
     margin-top: 24px;
   }
 
-  /* テキスト側の上の余白を詰める */
-  .works01>div,
-  .works02>div,
-  .works03>div,
-  .works04>div,
-  .works05>div,
-  .works06>div,
-  .works07>div,
-  .works08>div,
-  .works09>div,
-  .works10>div,
-  .works11>div,
-  .works12>div {
+  .work>div {
     padding-top: 0;
     width: 100%;
-    /* テキストは横幅いっぱい使う */
   }
 
-  .works01-img,
-  .works02-img,
-  .works03-img,
-  .works04-img,
-  .works05-img,
-  .works06-img,
-  .works07-img,
-  .works08-img,
-  .works09-img,
-  .works10-img,
-  .works11-img,
-  .works12-img {
+  .work-img {
     margin: 0 auto;
   }
 }
