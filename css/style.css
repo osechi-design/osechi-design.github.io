@@ -942,9 +942,16 @@ footer p {
 
 .works01-img,
 .works02-img,
+.works03-img,
 .works04-img,
 .works05-img,
-.works06-img {
+.works06-img,
+.works07-img,
+.works08-img,
+.works09-img,
+.works10-img,
+.works11-img,
+.works12-img {
   max-width: 600px;
   width: 100%;
   height: auto;
@@ -962,7 +969,13 @@ footer p {
 .works03,
 .works04,
 .works05,
-.works06 {
+.works06, 
+.works07,
+.works08,
+.works09,
+.works10,
+.works11,
+.works12 {
   display: flex;
   align-items: flex-start;
   gap: 30px;
@@ -987,12 +1000,18 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .works01,
-  .works02,
-  .works03,
-  .works04,
-  .works05,
-  .works06 {
+.works01,
+.works02,
+.works03,
+.works04,
+.works05,
+.works06,
+.works07,
+.works08,
+.works09,
+.works10,
+.works11,
+.works12 {
     flex-direction: column;
   }
 }
@@ -1003,7 +1022,13 @@ footer p {
 .works03>div,
 .works04>div,
 .works05>div,
-.works06>div {
+.works06>div,
+.works07>div,
+.works08>div,
+.works09>div,
+.works10>div,
+.works11>div,
+.works12>div {
   line-height: 1.7;
   padding-top: 20px;
 }
@@ -1013,7 +1038,13 @@ footer p {
 .works03>div,
 .works04>div,
 .works05>div,
-.works06>div {
+.works06>div
+.works07>div,
+.works08>div,
+.works09>div,
+.works10>div,
+.works11>div,
+.works12>div {
   text-align: left;
 }
 
@@ -1100,19 +1131,6 @@ dt .works-gradation{
     padding-top: 6px;
   }
 }
-
-/* h2.works00 .title-sub {
-  font-size: 16px;
-  display: block;
-  color: #000;
-  padding-top: 14px;
-} */
-
-/* dl {
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 32px 16px;
-} */
 
 dt {
   font-weight: bold;
@@ -1326,7 +1344,13 @@ dd {
   .works03,
   .works04,
   .works05,
-  .works06 {
+  .works06,
+  .works07,
+  .works08,
+  .works09,
+  .works10,
+  .works11,
+  .works12 {
     flex-direction: column;
     align-items: center;
     /* 画像とテキストを中央寄せ */
@@ -1339,7 +1363,13 @@ dd {
   .works03 dl,
   .works04 dl,
   .works05 dl,
-  .works06 dl {
+  .works06 dl,
+  .works07 dl,
+  .works08 dl,
+  .works09 dl,
+  .works10 dl,
+  .works11 dl,
+  .works12 dl {
     grid-template-columns: 1fr;
     gap: 8px 0;
     /* 上下だけの余白にする */
@@ -1350,7 +1380,13 @@ dd {
   .works03 dt,
   .works04 dt,
   .works05 dt,
-  .works06 dt {
+  .works06 dt
+  .works07 dt,
+  .works08 dt,
+  .works09 dt,
+  .works10 dt,
+  .works11 dt,
+  .works12 dt {
     text-align: left;
     margin-top: 24px;
   }
@@ -1361,22 +1397,31 @@ dd {
   .works03>div,
   .works04>div,
   .works05>div,
-  .works06>div {
+  .works06>div,
+  .works07>div,
+  .works08>div,
+  .works09>div,
+  .works10>div,
+  .works11>div,
+  .works12>div {
     padding-top: 0;
     width: 100%;
     /* テキストは横幅いっぱい使う */
   }
 
-  /* 念のため、画像も中央寄せしたい場合 */
   .works01-img,
   .works02-img,
   .works03-img,
   .works04-img,
   .works05-img,
-  .works06-img {
+  .works06-img,
+  .works07-img,
+  .works08-img,
+  .works09-img,
+  .works10-img,
+  .works11-img,
+  .works12-img {
     margin: 0 auto;
   }
 }
-
-
 /* ここまでworks↑ */
