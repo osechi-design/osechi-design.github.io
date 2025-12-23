@@ -10,7 +10,7 @@
 
   onReady(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const GLOBAL_START_DELAY = 400; // 可視後の“タメ”のデフォルト(ms)
+    const GLOBAL_START_DELAY = 0; // 可視後の“タメ”のデフォルト(ms)
 
     /* =========================
        1) jQuery.ripples（任意）
